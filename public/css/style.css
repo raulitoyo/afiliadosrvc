@@ -1,0 +1,233 @@
+/*
+Afiliados RVC, CSS
+*/
+
+.afiliadosrvc-container {
+	margin: 0 auto;
+	max-width: 300px;
+	position: relative;
+	overflow: hidden;
+	padding: 26px 24px 36px;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+	box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	
+}
+
+.afiliadosrvc-container fieldset {
+	border-width: 0;
+	border-color: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+.afiliadosrvc-container h4 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.afiliadosrvc-container h4 > small{
+	margin-top: 5px;
+	font-size: 20px;
+	font-style: italic;
+	display: block;
+}
+
+.afiliadosrvc-container.afiliadosrvc-full-width {
+	max-width: none;
+}
+
+.afiliadosrvc-full-width form fieldset {
+	clear: both;
+	margin-left: -5%;
+	margin-bottom: 26px;
+}
+
+.afiliadosrvc-full-width form .afiliadosrvc-field {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+}
+
+.afiliadosrvc-form,
+.afiliadosrvc-preview {
+	border-color: inherit;
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.afiliadosrvc-form label {
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.afiliadosrvc-form label.afiliadosrvc-terms {
+	text-align: inherit;
+	font-size: inherit;
+	text-transform: inherit;
+}
+
+.afiliadosrvc-field,
+.afiliadosrvc-form input[type="submit"] {
+	margin-bottom: 20px;
+}
+
+.afiliadosrvc-form input[type="text"],
+.afiliadosrvc-form input[type="password"],
+.afiliadosrvc-form input[type="email"],
+.afiliadosrvc-form input[type="submit"] {
+	height: 36px;
+	padding: 4px 8px;
+	width: 100%;
+}
+
+.afiliadosrvc-form select {
+	color: #7c7c7c;
+	width: 100%;
+	height: 36px;
+	-webkit-appearance: menulist-button;
+}
+
+.afiliadosrvc-form span {
+	color: #7c7c7c;
+	margin-left: 8px;
+}
+
+.afiliadosrvc-form button,
+.afiliadosrvc-form input,
+.afiliadosrvc-form select,
+.afiliadosrvc-form textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.afiliadosrvc-field-website {
+	display: none !important;
+}
+
+.afiliadosrvc-field-remember {
+	float: right;
+	text-align: right;
+}
+
+.afiliadosrvc-field-remember > label {
+	display: inline;
+}
+
+.afiliadosrvc-field-name {
+	background: url('images/name.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-field-surname {
+	background: url('images/surname.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-field-username {
+	background: url('images/log.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-field-password {
+	background: url('images/pwd.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-field-email {
+	background: url('images/mail.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-field-spam {
+	background: url('images/spam.png') no-repeat;
+	padding-left: 36px !important;
+}
+
+.afiliadosrvc-preview-top {
+	padding-bottom: 36px;
+	height: 24px;
+}
+
+.afiliadosrvc-form-bottom {
+	padding-top: 6px;
+	height: 24px;
+}
+
+
+.afiliadosrvc-form p.afiliadosrvc-form-description {
+	color: #7c7c7c;
+	font-size: 12px;
+	font-size: 0.85714286rem;
+	font-style: italic;
+}
+
+.afiliadosrvc-notification {
+	clear: both;
+	border: 1px solid;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align: center;
+	padding: 18px;
+	margin-bottom: 18px;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+	box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+}
+
+.afiliadosrvc-notification > p {
+	margin: 0px;
+}
+
+.afiliadosrvc-notification.success {
+	background: #F0F2DD;
+	border-color: #24890D;
+	color: #24890D;
+}
+
+.afiliadosrvc-notification.error {
+	background: #FFE7E7;
+	border-color: #FF5656;
+	color: #FF5656;
+}
+
+.afiliadosrvc-preview {
+	border-color: inherit;
+	text-align: center;
+}
+
+.afiliadosrvc-preview .avatar {
+	border-radius: 5px;
+	float: none;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto 24px auto;
+}
+
+.avatar.avatar-96.photo {
+	/*margin: 0 auto;*/
+	/*display: block;*/
+	margin-bottom: 10px;
+}
+
+.afiliadosrvc-form a.afiliadosrvc-form-register-link,
+.afiliadosrvc-preview a.afiliadosrvc-preview-logout-link {
+	text-align: right;
+	float: right;
+	text-decoration: none;
+}
+
+.afiliadosrvc-form a.afiliadosrvc-form-login-link,
+.afiliadosrvc-form a.afiliadosrvc-form-pwd-link,
+.afiliadosrvc-preview a.afiliadosrvc-preview-edit-link {
+	text-align: left;
+	float: left;
+	text-decoration: none;
+}
