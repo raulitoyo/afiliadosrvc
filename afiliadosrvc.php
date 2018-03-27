@@ -405,7 +405,7 @@ add_action( 'save_post', 'afiliadosrvc_get_pages_with_shortcodes' );
 * Add plugin text domain
 */
 function afiliadosrvc_load_textdomain(){
-	load_plugin_textdomain( 'afiliadosrvc', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
+	load_plugin_textdomain( 'afiliadosrvc', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'afiliadosrvc_load_textdomain' );
 
