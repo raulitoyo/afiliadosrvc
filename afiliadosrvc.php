@@ -2,10 +2,10 @@
 /*
 Plugin Name:  Afiliados RVC
 Description:  Registro de afiliados, de una organización de profesionales que permite agregar campos adicionales de los usuarios registrados (Personales, Formación académica y otros datos de interés). Desde la pagina principal a traves del shortcodes [afiliadosrvc-edit] puede modificar algunos datos cambiables
-Plugin URI:   https://raulitoyo.com
+Plugin URI:   https://github.com/raulitoyo/afiliadosrvc
 Author:       Raul Vargas Choquilla
 Version:      1.0
-Text Domain:  affiliates
+Text Domain:  afiliadosrvc
 Domain Path:  /languages
 License:      GPL v2 or later
 License URI:  https://www.gnu.org/licenses/gpl-2.0.txt
@@ -179,7 +179,7 @@ register_deactivation_hook(__FILE__,'codificadores_uninstall');
 // load text domain
 function myplugin_load_textdomain() {
 
-	load_plugin_textdomain( 'myplugin', false, plugin_dir_path( __FILE__ ) . 'languages/' );
+	load_plugin_textdomain( 'afiliadosrvc', false, plugin_dir_path( __FILE__ ) . 'languages/' );
 
 }
 add_action( 'plugins_loaded', 'myplugin_load_textdomain' );
@@ -284,21 +284,23 @@ function afiliadosrvc_load_before_headers() {
 				$current_user = wp_get_current_user();
 				$userdata = array( 'ID' => $current_user->ID );
 
-				$first_name = isset( $_POST['first_name'] ) ? $_POST['first_name'] : '';
-				$last_name = isset( $_POST['last_name'] ) ? $_POST['last_name'] : '';
-				$userdata['first_name'] = $first_name;
-				$userdata['last_name'] = $last_name;
+				$user_direccion = isset( $_POST['user_direccion'] ) ? $_POST['user_direccion'] : '';
+				$user_telefono = isset( $_POST['user_telefono'] ) ? $_POST['user_telefono'] : '';
+				$userdata['user_direccion'] = $user_direccion;
+				$userdata['user_telefono'] = $user_telefono;
 			
-				$email = isset( $_POST['email'] ) ? $_POST['email'] : '';
+			/*
+				$email = isset( $_POST['user_email2'] ) ? $_POST['user_email2'] : '';
 				if ( ! $email || empty ( $email ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
 				} elseif ( ! is_email( $email ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
-				} elseif ( ( $email != $current_user->user_email ) && email_exists( $email ) ) {
+				} elseif ( ( $email != $current_user->user_email2 ) && email_exists( $email ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
 				} else {
-					$userdata['user_email'] = $email;
+					$userdata['user_email2'] = $email;
 				}
+				*/
 
 				// check if password complexity is checked
 				$enable_passcomplex = get_option( 'cl_passcomplex' ) == 'on' ? true : false;

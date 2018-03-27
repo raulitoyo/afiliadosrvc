@@ -2,7 +2,7 @@
 
 Plugin Name:  Afiliados RVC
 Description:  Registro de afiliados, de una organización de profesionales que permite agregar campos adicionales de los usuarios registrados (Personales, Formación académica y otros datos de interés). Desde la página principal a través del shortcodes [afiliadosrvc-edit] puede modificar algunos datos cambiables
-Plugin URI:   https://raulitoyo.com
+Plugin URI:   https://github.com/raulitoyo/afiliadosrvc
 Author:       Raul Vargas Choquilla
 Version:      1.0
 Text Domain:  affiliates

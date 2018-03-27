@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Afiliados RVC\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-27 16:25+0000\n"
+"PO-Revision-Date: 2018-03-27 19:50+0000\n"
+"Last-Translator: raulitoyo <raulitoyo2@gmail.com>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/views/user-academic.php:13
+msgid "Academic degree"
+msgstr ""
+
+#: admin/views/user-academic.php:3
+msgid "ACADEMIC INFORMATION"
+msgstr "INFORMACION ACADEMICA"
+
+#: admin/views/user-academic.php:6
+msgid "Academic title"
+msgstr "Título académico"
+
+#: admin/views/user-academic.php:25
+msgid "Academic title date"
+msgstr "Fecha título académico"
+
+#: admin/views/user-personal.php:1
+msgid "ADDITIONAL INFORMATION"
+msgstr "INFORMACION ADICIONAL"
+
+#: public/login-edit.php:20 admin/views/user-personal.php:39
+#: admin/views/user-work.php:26
+msgid "Address"
+msgstr "Dirección"
+
+#: admin/admin-menu.php:19
+msgid "Admin area"
+msgstr ""
+
+#: admin/admin-menu.php:48
+msgid "Admin bar"
+msgstr ""
+
+#. Name of the plugin
+msgid "Afiliados RVC"
+msgstr ""
+
+#: admin/views/user-personal.php:25
+msgid "Birthdate"
+msgstr "Fecha de nacimiento"
+
+#: admin/views/user-register.php:19
+msgid "Book"
+msgstr "Libro"
+
+#: admin/views/user-register.php:33
+msgid "Category"
+msgstr "Categoria"
+
+#: public/login-edit.php:30
+msgid "Cell phone"
+msgstr "Télefono celular"
+
+#: admin/views/user-personal.php:53
+msgid "Cell phone number"
+msgstr "Número de teléfono celular"
+
+#: public/login-edit.php:77
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: public/login-edit.php:89
+msgid "Confirm password"
+msgstr "Confirmar contrasena"
+
+#: admin/views/user-academic.php:51
+msgid "Date national provision title"
+msgstr "Fecha título en provición nacional"
+
+#: admin/views/user-academic.php:28 admin/views/user-academic.php:54
+#: admin/views/user-personal.php:28 admin/views/user-register.php:15
+msgid "Day, month and year (dd/MM/aaa)"
+msgstr "Día, mes, año (dd/MM/aaaa)"
+
+#: admin/views/user-personal.php:21 admin/views/user-work.php:8
+msgid "Departament, province, place"
+msgstr "Departamento, provincia y lugar"
+
+#: admin/views/user-personal.php:42 admin/views/user-work.php:29
+msgid "Departament, province, place, street or avenue... and the number"
+msgstr "Departamento, provincia, lugar, calle o avenida... y número"
+
+#: admin/views/user-register.php:57
+msgid "Departamental registration"
+msgstr "Registro departamental"
+
+#: public/login-edit.php:35
+msgid "E-mail"
+msgstr "Correo eléctronico"
+
+#: afiliadosrvc.php:219
+msgid "Error updating email"
+msgstr "Error al actualizar correo eléctronico"
+
+#: admin/views/user-personal.php:7
+msgid "Female"
+msgstr "Femenino"
+
+#: public/login-edit.php:10
+msgid "General information"
+msgstr "Información general"
+
+#: admin/admin-menu.php:50
+msgid "Hide admin bar for non-admin users?"
+msgstr "Ocultar barra de administración para usuarios no administradores"
+
+#. URI of the plugin
+msgid "https://github.com/raulitoyo/afiliadosrvc"
+msgstr ""
+
+#: admin/views/user-personal.php:11
+msgid "Identification document"
+msgstr "Documento de identificación"
+
+#: public/login-edit.php:79
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+"Si le gustaria cambiar de contraseña escriba uno ahora, de lo contrario "
+"dejelo en blanco"
+
+#: admin/views/user-personal.php:14
+msgid "Include place of expedition"
+msgstr "Incluya lugar de expedición"
+
+#: afiliadosrvc.php:213
+msgid "Information updated"
+msgstr "Información actualizada"
+
+#: admin/views/user-work.php:1
+msgid "JOB INFORMATION"
+msgstr "INFORMACION DE TRABAJO"
+
+#: admin/views/user-register.php:45
+msgid "Level"
+msgstr "Nivel"
+
+#: public/login-form.php:19
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: admin/views/user-personal.php:6
+msgid "Male"
+msgstr "Masculino"
+
+#: public/login-edit.php:12 admin/views/user-work.php:12
+msgid "Name"
+msgstr "Nombre"
+
+#: admin/views/user-register.php:8
+msgid "National engieneer record or National registry of technician"
+msgstr "Registro Nacional de Ingeniero o Registro Nacional de Técnico"
+
+#: admin/views/user-academic.php:32
+msgid "National provision title"
+msgstr "Título en provisión nacional"
+
+#: admin/views/user-register.php:2
+msgid "NATIONAL REGISTRY INFORMATION"
+msgstr "INFORMACION DE REGISTRO NACIONAL"
+
+#: public/login-edit.php:84
+msgid "New password"
+msgstr "Nueva contraseña"
+
+#: admin/admin-menu.php:27
+msgid "Options"
+msgstr "Opciones"
+
+#: admin/views/user-other.php:3
+msgid "OTHER INFORMATION"
+msgstr "OTRA INFORMACION"
+
+#: admin/views/user-register.php:26
+msgid "Pages of the book"
+msgstr "Páginas del libro"
+
+#: admin/views/user-personal.php:32
+msgid "Passed away"
+msgstr "Falleció?"
+
+#: public/login-form.php:14
+msgid "Password"
+msgstr "Contraseña"
+
+#: afiliadosrvc.php:215
+msgid ""
+"Passwords must be eight characters including one upper/lowercase letter, one "
+"special/symbol character and alphanumeric characters. Passwords should not "
+"contain the user's username, email, or first/last name."
+msgstr ""
+"La contraseña debe tener 8 caracteres incluyendo letras mayausculas y "
+"minisculas, un caracter especial y caracteres alfanumericos. La contraseña "
+"no debe contener nombres de usuario, correo electronico y nombres"
+
+#: afiliadosrvc.php:217
+msgid "Passwords must be identical"
+msgstr "La contraseña deben ser identicos"
+
+#: public/login-edit.php:25
+msgid "Phone"
+msgstr "Teléfonos"
+
+#: admin/views/user-personal.php:46 admin/views/user-work.php:33
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: admin/views/user-work.php:4
+msgid "Place"
+msgstr "Lugar"
+
+#: admin/views/user-personal.php:18
+msgid "Place of birth"
+msgstr "Lugar de nacimiento"
+
+#: admin/views/user-work.php:19
+msgid "Position"
+msgstr "Cargo"
+
+#. Author of the plugin
+msgid "Raul Vargas Choquilla"
+msgstr ""
+
+#: admin/views/user-register.php:12
+msgid "Registration date"
+msgstr "Fecha de registro"
+
+#. Description of the plugin
+msgid ""
+"Registro de afiliados, de una organización de profesionales que permite "
+"agregar campos adicionales de los usuarios registrados (Personales, "
+"Formación académica y otros datos de interés). Desde la pagina principal a "
+"traves del shortcodes [afiliadosrvc-edit] puede modificar algunos datos "
+"cambiables"
+msgstr ""
+
+#: public/login-form.php:24
+msgid "Remember?"
+msgstr "Recuerdame?"
+
+#: admin/views/user-register.php:5
+msgid "RNI o RNT"
+msgstr "RNI o RNT"
+
+#: admin/admin-menu.php:57
+msgid "Save Changes"
+msgstr "Grabar cambios"
+
+#: admin/views/user-personal.php:60
+msgid "Secondary email"
+msgstr "Correo eléctronico secundario"
+
+#: admin/views/user-personal.php:49 admin/views/user-personal.php:56
+#: admin/views/user-work.php:36
+msgid "Separates by commas"
+msgstr "Separado por comas"
+
+#: admin/admin-menu.php:37
+msgid "Settings saved."
+msgstr "grabar ajustes"
+
+#: admin/views/user-personal.php:4
+msgid "Sex"
+msgstr "Sexo"
+
+#: afiliadosrvc.php:221
+msgid "Something strange has ocurred"
+msgstr "Algo extraño ha ocurrido"
+
+#: admin/views/user-register.php:69
+msgid "Specialty school"
+msgstr "Colegio de especialidad"
+
+#: public/login-edit.php:66 admin/views/user-other.php:13
+msgid "Tall diver"
+msgstr "Talla de buzo"
+
+#: public/login-edit.php:61 admin/views/user-other.php:6
+msgid "Tall jacket"
+msgstr "Talla de chamarra"
+
+#: public/login-edit.php:71 admin/views/user-other.php:20
+msgid "Tall shirt"
+msgstr "Talla de polera"
+
+#: admin/views/user-academic.php:39
+msgid "University national provision title"
+msgstr "Universidad título en provisión nacional"
+
+#: public/login-edit.php:96
+msgid "Update profile"
+msgstr "Actualizar perfil"
+
+#: public/login-form.php:10
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: public/login-edit.php:50
+msgid "Work address"
+msgstr "Dirección de trabajo"
+
+#: public/login-edit.php:45
+msgid "Work name"
+msgstr "Nombre del trabajo"
+
+#: public/login-edit.php:55
+msgid "Work phone"
+msgstr "Teléfono del trabajo"
+
+#: public/login-edit.php:40
+msgid "Work place"
+msgstr "Lugar de trabajo"
+
+#: afiliadosrvc.php:227
+msgid "You need to be logged in to edit your profile"
+msgstr "Necesita iniciar sesión para modificar su perfil"

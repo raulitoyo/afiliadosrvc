@@ -5,30 +5,73 @@
 <div class="afiliadosrvc-container afiliadosrvc-full-width">
 	<form class="afiliadosrvc-form" method="post" action="#">
 
-		<h4><?php echo __( 'General information', 'afiliadosrvc' ); ?></h4>
+		<h4>
+		<?php 
+			echo __( 'General information', 'afiliadosrvc' ); 
+			echo '<br>';
+			echo __( 'Name', 'afiliadosrvc' ); 
+			echo ': ' . $current_user->user_firstname . ' ' . $current_user->user_lastname . '<br>';
+		?>
+		</h4>		
 
 		<fieldset>
 		
 			<div class="afiliadosrvc-field">
-				<label><?php echo __( 'First name', 'afiliadosrvc' ); ?></label>
-				<input type="text" name="first_name" value="<?php echo $current_user->user_firstname; ?>">
+				<label><?php echo __( 'Address', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_direccion" value="<?php echo $current_user->user_direccion; ?>">
 			</div>
 			
 			<div class="afiliadosrvc-field">
-				<label><?php echo __( 'Last name', 'afiliadosrvc' ); ?></label>
-				<input type="text" name="last_name" value="<?php echo $current_user->user_lastname; ?>">
+				<label><?php echo __( 'Phone', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_telefono" value="<?php echo $current_user->user_telefono; ?>">
 			</div>
 						
 			<div class="afiliadosrvc-field">
-				<label><?php echo __( 'Age', 'afiliadosrvc' ); ?></label>
-				<input type="text" name="user_edad" value="<?php echo $current_user->user_edad; ?>">
+				<label><?php echo __( 'Cell phone', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_celular" value="<?php echo $current_user->user_celular; ?>">
 			</div>
 			
 			<div class="afiliadosrvc-field">
 				<label><?php echo __( 'E-mail', 'afiliadosrvc' ); ?></label>
-				<input type="text" name="email" value="<?php echo $current_user->user_email; ?>">
+				<input type="text" name="user_email2" value="<?php echo $current_user->user_email2; ?>">
 			</div>
 			
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Work place', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_lugartrabajo" value="<?php echo $current_user->user_lugartrabajo; ?>">
+			</div>
+			
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Work name', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_nombretrabajo" value="<?php echo $current_user->user_nombretrabajo; ?>">
+			</div>
+						
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Work address', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_direcciontrabajo" value="<?php echo $current_user->user_direcciontrabajo; ?>">
+			</div>
+			
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Work phone', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_telefonotrabajo" value="<?php echo $current_user->user_telefonotrabajo; ?>">
+			</div>
+
+
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Tall jacket', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_tallachamarra" value="<?php echo $current_user->user_tallachamarra; ?>">
+			</div>
+						
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Tall diver', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_tallabuzo" value="<?php echo $current_user->user_tallabuzo; ?>">
+			</div>
+			
+			<div class="afiliadosrvc-field">
+				<label><?php echo __( 'Tall shirt', 'afiliadosrvc' ); ?></label>
+				<input type="text" name="user_tallapolera" value="<?php echo $current_user->user_tallapolera; ?>">
+			</div>
+
 		</fieldset>
 
 		<h4><?php echo __( 'Change password', 'afiliadosrvc' ); ?></h4>
@@ -56,3 +99,4 @@
 
 	</form>
 </div>
+
