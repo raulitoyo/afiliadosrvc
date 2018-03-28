@@ -226,9 +226,6 @@ function show_afiliadosrvc_edit($atts) {
 	} else {
 		echo "<div class='afiliadosrvc-notification error'><p>". __( 'You need to be logged in to edit your profile', 'afiliadosrvc' ) ."</p></div>";
 		get_template_file( 'login-form.php' );
-		/*$login_url = get_option( 'cl_login_url', '');
-		if ( $login_url != '' )
-			echo "<script>window.location = '$login_url'</script>";*/
 	}
 
 	return ob_get_clean();
@@ -286,21 +283,37 @@ function afiliadosrvc_load_before_headers() {
 
 				$user_direccion = isset( $_POST['user_direccion'] ) ? $_POST['user_direccion'] : '';
 				$user_telefono = isset( $_POST['user_telefono'] ) ? $_POST['user_telefono'] : '';
+				$user_celular = isset( $_POST['user_celular'] ) ? $_POST['user_celular'] : '';
 				$userdata['user_direccion'] = $user_direccion;
 				$userdata['user_telefono'] = $user_telefono;
-			
-			/*
-				$email = isset( $_POST['user_email2'] ) ? $_POST['user_email2'] : '';
-				if ( ! $email || empty ( $email ) ) {
+				$userdata['user_celular'] = $user_celular;
+				$userdata['user_email2'] = $user_email2;
+		
+				$user_email2 = isset( $_POST['user_email2'] ) ? $_POST['user_email2'] : '';
+				if ( ! $user_email2 || empty ( $user_email2 ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
-				} elseif ( ! is_email( $email ) ) {
+				} elseif ( ! is_email( $user_email2 ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
-				} elseif ( ( $email != $current_user->user_email2 ) && email_exists( $email ) ) {
+				} elseif ( ( $user_email2 != $current_user->user_email2 ) && email_exists( $user_email2 ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'wrongmail', $url ) );
 				} else {
-					$userdata['user_email2'] = $email;
+					$userdata['user_email2'] = $user_email2;
 				}
-				*/
+
+				$user_lugartrabajo = isset( $_POST['user_lugartrabajo'] ) ? $_POST['user_lugartrabajo'] : '';
+				$user_nombretrabajo = isset( $_POST['user_nombretrabajo'] ) ? $_POST['user_nombretrabajo'] : '';
+				$user_direcciontrabajo = isset( $_POST['user_direcciontrabajo'] ) ? $_POST['user_direcciontrabajo'] : '';
+				$user_telefonotrabajo = isset( $_POST['user_telefonotrabajo'] ) ? $_POST['user_telefonotrabajo'] : '';
+				$user_tallachamarra = isset( $_POST['user_tallachamarra'] ) ? $_POST['user_tallachamarra'] : '';
+				$user_tallabuzo = isset( $_POST['user_tallabuzo'] ) ? $_POST['user_tallabuzo'] : '';
+				$user_tallapolera = isset( $_POST['user_tallapolera'] ) ? $_POST['user_tallapolera'] : '';
+				$userdata['user_lugartrabajo'] = $user_lugartrabajo;
+				$userdata['user_nombretrabajo'] = $user_nombretrabajo;
+				$userdata['user_direcciontrabajo'] = $user_direcciontrabajo;
+				$userdata['user_telefonotrabajo'] = $user_telefonotrabajo;
+				$userdata['user_tallachamarra'] = $user_tallachamarra;
+				$userdata['user_tallabuzo'] = $user_tallabuzo;
+				$userdata['user_tallapolera'] = $user_tallapolera;
 
 				// check if password complexity is checked
 				$enable_passcomplex = get_option( 'cl_passcomplex' ) == 'on' ? true : false;
@@ -322,6 +335,11 @@ function afiliadosrvc_load_before_headers() {
 				$user_id = wp_update_user( $userdata );
 				if ( is_wp_error( $user_id ) ) {
 					$url = esc_url( add_query_arg( 'updated', 'failed', $url ) );
+
+					echo "errorrrrrrrrrrrrrrrrrrrrrrrrrrrrr";
+				} else
+				{
+					echo "biennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn";
 				}
 
 				wp_safe_redirect( $url );
